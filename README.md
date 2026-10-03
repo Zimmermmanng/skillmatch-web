@@ -44,3 +44,5 @@ skillmatch-web/
     │   └── dados.js
     └── data/
         └── vagas.json
+## ?? Deploy
+Demonstra��o online: [SkillMatch Web](https://zimmermmanng.github.io/skillmatch-web/)
