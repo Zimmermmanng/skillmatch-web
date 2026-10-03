@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "empresa": "Tech Solutions",
+    "cargo": "Desenvolvedor Front-End Jr",
+    "area": "Front-End",
+    "requisitos": ["html", "css", "javascript"],
+    "salario": "R$ 3.500,00",
+    "modalidade": "Remoto"
+  },
+  {
+    "id": 2,
+    "empresa": "Web Innovate",
+    "cargo": "Analista Web Jr",
+    "area": "Front-End",
+    "requisitos": ["html", "css", "javascript", "react"],
+    "salario": "R$ 4.000,00",
+    "modalidade": "Híbrido"
+  },
+  {
+    "id": 3,
+    "empresa": "Code Base",
+    "cargo": "Desenvolvedor Node Jr",
+    "area": "Back-End",
+    "requisitos": ["javascript", "node", "sql"],
+    "salario": "R$ 3.800,00",
+    "modalidade": "Presencial"
+  },
+  {
+    "id": 4,
+    "empresa": "Design & Code",
+    "cargo": "UI Developer Jr",
+    "area": "Front-End",
+    "requisitos": ["html", "css", "figma"],
+    "salario": "R$ 3.200,00",
+    "modalidade": "Remoto"
+  }
+]
