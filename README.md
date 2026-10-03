@@ -1,48 +1,30 @@
-# SkillMatch — Plataforma de Compatibilidade de Vagas
+# 🚀 SkillMatch Web - Módulo 1
 
-O **SkillMatch** é uma aplicação web desenvolvida em **HTML5, CSS3 e JavaScript puro (ES6+)**, sem frameworks ou bibliotecas externas.
-
-A aplicação analisa o perfil profissional de um candidato, compara as suas competências com as vagas disponíveis no catálogo e indica as oportunidades com maior nível de compatibilidade, fornecendo recomendações de estudo personalizadas.
+Aplicação web desenvolvida em JavaScript puro (Vanilla JS), estruturada com módulos ES6 e Programação Orientada a Objetos (POO), criada para conectar perfis profissionais a oportunidades de vagas com cálculo dinâmico de compatibilidade.
 
 ---
 
-## 🎯 Funcionalidades
+## 🎯 Funcionalidades & Requisitos Atendidos
 
-- **Registo e Persistência:** Guardado automático no `localStorage`.
-- **Análise Automática:** Cálculo em tempo real da compatibilidade com as vagas.
-- **Classificação:** Níveis Alta (≥80%), Média (50–79%) e Baixa (<50%).
-- **Destaque:** Exibição da vaga ideal com maior correspondência.
-- **Recomendação de Estudo:** Indicação dos requisitos que faltam ao candidato.
-- **Consumo de Dados:** Carregamento dinâmico via `fetch` a partir de JSON local.
-
----
-
-## 🛠️ Requisitos Técnicos Implementados
-
-- **HTML Semântico & Acessibilidade:** Uso de tags semânticas e atributo `aria-live`.
-- **CSS Mobile-First & Flexbox:** Layout responsivo sem o uso de CSS Grid.
-- **POO:** Classes `Vaga` e `VagaFrontEnd` com herança (`extends`, `super`) e `this`.
-- **Métodos de Array:** `map`, `filter` e `reduce` para processamento dos dados.
-- **JS Avançado:** Implementação de **Closure** e **Callback**.
-- **Módulos ES6:** Estrutura em ficheiros separados (`motor.js`, `dados.js`, `ui.js`, `main.js`).
+* **Busca de Vagas Assíncrona:** Consumo de dados via `fetch` a partir de um ficheiro JSON local, com tratamento completo para os estados de carregamento, sucesso e erro.
+* **Cálculo de Compatibilidade:** Análise algorítmica cruzando as competências do candidato com os requisitos da vaga para gerar um indicador percentual e recomendações de estudo.
+* **Persistência de Dados:** Utilização do `localStorage` para guardar e recuperar as informações do perfil do utilizador.
+* **Programação Orientada a Objetos (POO):** Aplicação de classes e herança para a modelagem das vagas e regras de negócio.
+* **Design Responsivo:** Interface construída com abordagem Mobile-First e Flexbox, garantindo ótima adaptação em diferentes ecrãs.
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🛠️ Tecnologias Utilizadas
 
-```text
-skillmatch-web/
-├── index.html
-├── README.md
-└── assets/
-    ├── styles/
-    │   └── style.css
-    ├── scripts/
-    │   ├── main.js
-    │   ├── motor.js
-    │   ├── ui.js
-    │   └── dados.js
-    └── data/
-        └── vagas.json
-## ?? Deploy
-Demonstra��o online: [SkillMatch Web](https://zimmermmanng.github.io/skillmatch-web/)
+* **HTML5** (Estrutura semântica e acessibilidade)
+* **CSS3** (Variáveis, Flexbox e Media Queries)
+* **JavaScript ES6+** (Módulos, POO, manipulação do DOM e `fetch`)
+* **Git & GitHub** (Controlo de versões com fluxo de *branches*)
+
+---
+
+## 🌐 Links e Demonstração
+
+* **Demonstração Online (GitHub Pages):** [Aceder ao site em funcionamento](https://zimmermmanng.github.io/skillmatch-web/)
+* **Repositório do Código:** [Ver repositório no GitHub](https://github.com/Zimmermmanng/skillmatch-web)
+* **Quadro Kanban (Trello):** [Ver planeamento e gestão de tarefas](https://trello.com/b/ScjtGIij)
