@@ -3,53 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillMatch - Conectando Talentos e Carreiras</title>
-    <!-- Link para o CSS principal -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Favicon utilizando o SVG -->
-    <link rel="icon" href="./assets/img/logo.svg" type="image/svg+xml">
+    <meta name="description" content="SkillMatch - Analise seu perfil e encontre a vaga ideal na área de tecnologia.">
+    <title>SkillMatch | Encontre sua Vaga</title>
+    <link rel="icon" href="./assets/img/logo.png.png" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-
-    <!-- Cabeçalho do Site -->
-    <header class="header-site">
-        <div class="container header-container">
-            <a href="index.html" class="logo-link">
-                <img src="./assets/img/logo.svg" alt="Ícone SkillMatch" class="logo-img">
-                <span class="logo-text">SKILLMATCH</span>
-            </a>
-            <nav class="nav-menu">
-                <a href="#vagas">Vagas</a>
-                <a href="#perfil">Meu Perfil</a>
-                <a href="#analiticas">Analíticas</a>
-            </nav>
-        </div>
+    <header>
+        <nav style="display: flex; align-items: center; gap: 10px;">
+            <img src="./assets/img/logo.png.png" alt="Logotipo SkillMatch" title="SkillMatch" style="width: 45px; height: auto;">
+            <h1>SkillMatch</h1>
+        </nav>
     </header>
 
-    <!-- Seção Principal / Hero -->
     <main>
-        <section class="hero-section">
-            <div class="container hero-content">
-                <h1>Conectando Talentos, Construindo Carreiras</h1>
-                <p>Encontra as melhores oportunidades de emprego alinhadas com as tuas competências técnicas e comportamentais.</p>
-                <a href="#perfil" class="btn-primary">Criar Meu Perfil Profissional</a>
-            </div>
+        <section id="perfil-candidato">
+            <h2>Seu Perfil Profissional</h2>
+            <form id="form-perfil">
+                <div class="input-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="input-group">
+                    <label for="area">Área de Interesse</label>
+                    <select id="area" name="area" required>
+                        <option value="">Selecione...</option>
+                        <option value="Front-End">Front-End</option>
+                        <option value="Back-End">Back-End</option>
+                        <option value="Full-Stack">Full-Stack</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="habilidades">Habilidades (separadas por vírgula)</label>
+                    <input type="text" id="habilidades" name="habilidades" placeholder="Ex: HTML, CSS, JavaScript" required>
+                </div>
+                <div class="input-group">
+                    <label for="experiencia">Tempo de Experiência (anos)</label>
+                    <input type="number" id="experiencia" name="experiencia" min="0" required>
+                </div>
+                <button type="submit">Analisar Compatibilidade</button>
+            </form>
         </section>
 
-        <!-- Seções dinâmicas do projeto (Vagas, Formulário, etc.) -->
-        <section id="perfil" class="container section-padding">
-            <!-- Conteúdo manipulado via JavaScript (fetch, localStorage, etc.) -->
+        <!-- O JavaScript vai injetar os estados de loading, erro e os cards aqui dentro -->
+        <section id="area-resultados" aria-live="polite">
         </section>
     </main>
 
-    <!-- Rodapé -->
-    <footer class="footer-site">
-        <div class="container">
-            <p>&copy; 2026 SkillMatch Web. Desenvolvido para o Módulo 1.</p>
-        </div>
+    <footer>
+        <p>&copy; 2026 SkillMatch. Avaliação Módulo 1.</p>
     </footer>
 
-    <!-- Script principal em JavaScript ES6 -->
-    <script src="script.js" type="module"></script>
+    <!-- Importação em módulo, como exigido -->
+    <script type="module" src="./assets/scripts/main.js"></script>
 </body>
 </html>
